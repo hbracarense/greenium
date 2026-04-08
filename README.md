@@ -27,6 +27,8 @@ The codebase is written in **Python/R** and relies primarily on Excel, CSV, and 
 .
 ├── Data/
 │   ├── Bonds/
+|   |   ├── Cash flows/
+|   |   ├── Descriptions/
 │   │   └── Miscellaneous/
 │   ├── Databases/
 │   │   ├── Original/
@@ -43,6 +45,11 @@ The codebase is written in **Python/R** and relies primarily on Excel, CSV, and 
     |   ├── equacao.R
     |   └── graficos_ingles.R
 ```
+### `Data/Bonds/Cash flows/`
+Contains spreadsheets presenting the entire cash flow scheme,from emission to maturity, for each bond in the database.
+
+### `Data/Bonds/Descriptions/`
+Contains, in PDF file, general informations of each bond in the database.
 
 ### `Data/Bonds/Miscellaneous/`
 Contains auxiliary bond-related files, including spreadsheets and exports used during the construction of the study database. This folder includes raw and semi-processed materials such as debenture characteristics, price files, and bond classification spreadsheets.
