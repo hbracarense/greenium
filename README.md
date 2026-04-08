@@ -6,9 +6,9 @@ The achievement of sustainable development goals is urgent, driven both by the a
 
 ## Overview
 
-This repository contains the empirical materials, intermediate databases, and R scripts used in the study **_Greenium and Sustainable Development Financing in Brazil_**. It is organized as a **research replication package** intended to accompany an academic manuscript, dissertation chapter, preprint, or journal submission.
+This repository contains the empirical materials, intermediate databases, and Python/R scripts used in the study **_Greenium and Sustainable Development Financing in Brazil_**. It is organized as a **research replication package** intended to accompany an academic manuscript, dissertation chapter, preprint, or journal submission.
 
-The repository combines original source files, treated databases, Central Bank *Focus Bulletin* PDFs, and R scripts used to generate descriptive figures, duration-yield visualizations, and implicit inflation curve outputs. Taken together, these materials document the workflow underlying the paper's graphical, descriptive, and bond-level empirical exercises.
+The repository combines original source files, treated databases, Central Bank *Focus Bulletin* PDFs, and Python/R scripts used to generate descriptive figures, duration-yield visualizations, and implicit inflation curve outputs. Taken together, these materials document the workflow underlying the paper's graphical, descriptive, and bond-level empirical exercises.
 
 ## Scope of the replication package
 
@@ -19,7 +19,7 @@ This repository is centered on four analytical components:
 3. **Duration-yield comparison for a selected green bond**, contrasting it with comparable vanilla instruments.
 4. **Yield-equation solving for selected debentures**, implemented through explicit cash-flow equations and numerical root finding.
 
-The codebase is written in **R** and relies primarily on Excel, CSV, and PDF source files stored in the `Data/` directory.
+The codebase is written in **Python/R** and relies primarily on Excel, CSV, and PDF source files stored in the `Data/` directory.
 
 ## Repository structure
 
@@ -33,10 +33,15 @@ The codebase is written in **R** and relies primarily on Excel, CSV, and PDF sou
 │   │   └── Treated/
 │   └── Focus Bulletin/
 └── Scripts/
-    ├── curva_inflacao.R
-    ├── dissertacao_artigo.R
-    ├── equacao.R
-    └── graficos_ingles.R
+    └── Web scrapper/
+    |   ├── chromedriver.exe
+    |   ├── functions.py
+    |   └── main.py
+    ├── Calculations and figures/
+    |   ├── curva_inflacao.R
+    |   ├── dissertacao_artigo.R
+    |   ├── equacao.R
+    |   └── graficos_ingles.R
 ```
 
 ### `Data/Bonds/Miscellaneous/`
@@ -59,12 +64,19 @@ Contains processed datasets used more directly by the analytical scripts. Notabl
 ### `Data/Focus Bulletin/`
 Contains PDF issues of the Brazilian Central Bank's **Focus Bulletin** used as source material in the original research workflow.
 
-### `Scripts/`
-Contains the R code used to generate the article's figures and selected analytical routines.
+### `Scripts/Web scrapper`
+Written in Python, contains the web scrapper created to automate the extraction of data from bonds databases.
 
-## Main scripts
+### `Scripts/Web scrapper/crhomedriver.exe`
+The version of the Selenium webdriver employed.
 
-### `Scripts/graficos_ingles.R`
+### `Scripts/Web scrapper/functions.py`
+Creates the functions utilized in the ETL process.
+
+### `Scripts/Web scrapper/main.py`
+Executes the ETL process.
+
+### `Scripts/Calculations and figures/graficos_ingles.R`
 This is the main figure-generation script for the English-language graphical outputs. It produces a set of publication-style figures, including:
 
 - **Figure 1**: emissions and market volume over time;
@@ -75,13 +87,13 @@ This is the main figure-generation script for the English-language graphical out
 
 The script reads directly from `Pasta1.xlsx` and also embeds the inflation-curve computation used to generate the fifth figure.
 
-### `Scripts/curva_inflacao.R`
+### `Scripts/Calculations and figures/curva_inflacao.R`
 A standalone version of the implicit inflation curve routine. It computes the curve from predefined term-structure parameters and exports the corresponding figure separately from the broader English-graphics script.
 
-### `Scripts/dissertacao_artigo.R`
+### `Scripts/Calculations and figures/dissertacao_artigo.R`
 Generates the duration-yield plot for a selected green bond (`OMNG12`) against comparable vanilla bonds using `duration_db.xlsx`. This script is associated with the bond-level visual comparison exercise reported in the study.
 
-### `Scripts/equacao.R`
+### `Scripts/Calculations and figures/equacao.R`
 Implements explicit pricing/yield equations for a set of selected bonds and solves them numerically using `rootSolve::uniroot.all()`. This script mixes hard-coded cash-flow equations with spreadsheet inputs and functions as a specialized analytical routine rather than as a fully generalized estimation pipeline.
 
 ## Data provenance and language note
