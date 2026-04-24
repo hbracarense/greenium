@@ -1,6 +1,6 @@
 # Green Bond Pricing in an Emerging Market: Evidence from Brazil
 
-[![DOI](https://zenodo.org/badge/1204422304.svg)](https://zenodo.org/badge/latestdoi/1204422304)
+[![DOI](https://zenodo.org/badge/1204422304.svg?style=flat)](https://zenodo.org/badge/latestdoi/1204422304)
 
 ## Abstract
 
