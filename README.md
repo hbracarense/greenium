@@ -1,5 +1,7 @@
 # Green Bond Pricing in an Emerging Market: Evidence from Brazil
 
+[![DOI](https://zenodo.org/badge/1204422304.svg)](https://doi.org/10.5281/zenodo.19723326)
+
 ## Abstract
 
 Testing for a greenium in emerging bond markets is challenging because standard pricing methodologies were developed for large, liquid, hard-currency markets. Brazil offers a relevant case: its corporate debt market is relatively thin, largely local-currency based, and dominated by hybrid fixed-and-floating instruments. Against this background, this paper develops an approach to identify greenium in Brazilian debentures and applies it to thirteen green issuances between 2015 and 2021. The Brazilian green bond market is first characterized through descriptive statistics, and yield curves are then constructed for comparative baskets of conventional securities. The results show that a greenium is not pervasive in the Brazilian market: only three debentures are priced below the fitted yield curve, while the remaining securities display conventional new-issuance premiums. These findings are consistent with the mixed evidence on green bond pricing in emerging markets and suggest that green labeling alone does not systematically reduce financing costs in thin local-currency debt markets. More broadly, the methodology developed here may offer a useful framework for analyzing green bond pricing in comparable emerging-market contexts.
