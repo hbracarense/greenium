@@ -1,12 +1,12 @@
-# Greenium and Sustainable Development Financing in Brazil
+# Green Bond Pricing in an Emerging Market: Evidence from Brazil
 
 ## Abstract
 
-The achievement of sustainable development goals is urgent, driven both by the accelerating impacts of climate change and by persistent levels of inequality. This has generated growing demand for sustainable financing, yet access to capital has been hindered by the restructuring of financial systems following the 2008 Global Financial Crisis. Against this backdrop, green bonds have emerged as a promising instrument — debt securities characterized by high levels of transparency, external certification, and a declared use of proceeds for sustainability purposes. While international literature confirms the existence of a yield discount, or greenium, in green bond pricing, the Brazilian market lacks a systematic investigation. The Brazilian green bond market is first characterized through descriptive statistics for the period 2015–2021. We then develop a methodology tailored to the peculiarities of Brazilian bond markets — specifically their hybrid fixed-and-floating structure — to construct yield curves for thirteen debentures, identifying a greenium in three of them, while the rest show conventional new-issuance premiums. The findings are broadly consistent with the mixed evidence on greenia in emerging markets, and the methodology developed here may offer a useful template for analogous studies in comparable market contexts.
+Testing for a greenium in emerging bond markets is challenging because standard pricing methodologies were developed for large, liquid, hard-currency markets. Brazil offers a relevant case: its corporate debt market is relatively thin, largely local-currency based, and dominated by hybrid fixed-and-floating instruments. Against this background, this paper develops an approach to identify greenium in Brazilian debentures and applies it to thirteen green issuances between 2015 and 2021. The Brazilian green bond market is first characterized through descriptive statistics, and yield curves are then constructed for comparative baskets of conventional securities. The results show that a greenium is not pervasive in the Brazilian market: only three debentures are priced below the fitted yield curve, while the remaining securities display conventional new-issuance premiums. These findings are consistent with the mixed evidence on green bond pricing in emerging markets and suggest that green labeling alone does not systematically reduce financing costs in thin local-currency debt markets. More broadly, the methodology developed here may offer a useful framework for analyzing green bond pricing in comparable emerging-market contexts.
 
 ## Overview
 
-This repository contains the empirical materials, intermediate databases, and Python/R scripts used in the study **_Greenium and Sustainable Development Financing in Brazil_**. It is organized as a **research replication package** intended to accompany an academic manuscript, dissertation chapter, preprint, or journal submission.
+This repository contains the empirical materials, intermediate databases, and Python/R scripts used in the study **_Green Bond Pricing in an Emerging Market: Evidence from Brazil_**. It is organized as a **research replication package** intended to accompany an academic manuscript, dissertation chapter, preprint, or journal submission.
 
 The repository combines original source files, treated databases, Central Bank *Focus Bulletin* PDFs, and Python/R scripts used to generate descriptive figures, duration-yield visualizations, and implicit inflation curve outputs. Taken together, these materials document the workflow underlying the paper's graphical, descriptive, and bond-level empirical exercises.
 
@@ -224,7 +224,7 @@ A paper-oriented placeholder entry is also provided below.
 ```bibtex
 @article{author2026greenium,
   author       = {Author Name},
-  title        = {Greenium and Sustainable Development Financing in Brazil},
+  title        = {Green Bond Pricing in an Emerging Market: Evidence from Brazil},
   journal      = {Journal Name},
   year         = {2026},
   volume       = {xx},
